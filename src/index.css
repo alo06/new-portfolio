@@ -1,0 +1,19 @@
+@font-face {
+  font-family: windows;
+  src: url("./assets/fonts/W95FA.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: windows;
+}
+
+.main-container {
+  background: url("./assets/images/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
