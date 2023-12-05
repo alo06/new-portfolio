@@ -17,3 +17,11 @@
   background-size: cover;
   height: 100vh;
 }
+
+.landing{
+  height: 100vh;
+}
+.landing img{
+  height: 100%;
+  width: 100%;
+}

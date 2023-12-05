@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Message.css'
-import windows from "../../assets/images/windows.mp3";
+import mouseClick from "../../assets/images/MouseClick.mp3";
 import computer from '../../assets/images/computer.png'
 
 
@@ -8,7 +8,7 @@ const Message = () => {
   const [close,setClose] = useState(false);
   return (
     <div className={close ? "close" : "message-container"}>
-      {close && <audio src={windows} autoPlay className='audio'/>}
+      {close && <audio src={mouseClick} autoPlay className='audio'/>}
       <div className="message-container-top">
         <p>message</p>
         <button className="message-btn" onClick={() => setClose(!close)}>

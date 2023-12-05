@@ -4,7 +4,7 @@ import { social } from '../../data.jsx'
 import { SiWindows95 } from "react-icons/si";
 import { GiSpeakerOff, GiSpeaker } from "react-icons/gi";
 import ReactAudioPlayer from "react-audio-player";
-import pinball from '../../assets/images/pinball.mp3'
+import badpig from '../../assets/images/badpig.mp3'
 
 const Taskbar = () => {
   const [time,setTime] = useState(new Date());
@@ -18,7 +18,7 @@ const Taskbar = () => {
 
   return (
     <div className="taskbar">
-      {sound && <ReactAudioPlayer src={pinball} autoPlay={true} volume={0.1} />}
+      {!sound && <ReactAudioPlayer src={badpig} autoPlay={true} volume={0.1} />}
       <div className="taskbar-first">
         <button
           onClick={() => {
@@ -41,14 +41,14 @@ const Taskbar = () => {
       <div className="taskbar-second">
         <div className="taskbar-second-icons">
           {sound ? (
-            <GiSpeaker
+            <GiSpeakerOff
               size={30}
               onClick={() => {
                 setSound(!sound);
               }}
             />
           ) : (
-            <GiSpeakerOff
+            <GiSpeaker
               size={30}
               onClick={() => {
                 setSound(!sound);
