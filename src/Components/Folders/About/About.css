@@ -9,3 +9,33 @@
     background-color: white;
     z-index: 1000;
 }
+
+.windows-titlebar {
+      background-color: #0000cd;
+      padding: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .windows-title {
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      font-size: 12px;
+    }
+
+    .windows-buttons {
+      display: flex;
+    }
+
+    .windows-button {
+      width: 20px;
+      height: 20px;
+      margin-left: 5px;
+      border: 1px solid #000;
+      background-color: #ff0000; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }

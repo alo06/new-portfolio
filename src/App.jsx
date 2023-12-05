@@ -8,18 +8,19 @@ import windowsMp3 from './assets/images/windows.mp3'
 
 
 function App() {
-  const [isLoading,setIsLoading] = useState(false);
+  const [isLoading,setIsLoading] = useState(true);
 
-  useEffect(()=>{
-    setIsLoading(true);
-    setTimeout(()=>{
-      setIsLoading(false)
-    },4000)
-  },[])
+  const handleClick = () =>{
+    setInterval(()=>{
+      setIsLoading(false);
+    },1000)
+  }
 
   return isLoading ? (
     <div className="landing">
-      <audio src={windowsMp3} autoPlay/>
+      <button className="start-btn" onClick={handleClick}>
+        Start
+      </button>
       <img src={startupImage} alt="" />
     </div>
   ) : (
@@ -27,6 +28,7 @@ function App() {
       <Message />
       <Folders />
       <Taskbar />
+      <audio src={windowsMp3} autoPlay />
     </div>
   );
 }
