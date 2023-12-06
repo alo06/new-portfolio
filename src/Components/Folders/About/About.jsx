@@ -1,5 +1,9 @@
 import React from 'react'
 import './About.css'
+import pfp from '../../../assets/images/pfp.jpg'
+import Education from './Education'
+import { educationData } from '../../../data.jsx'
+
 
 const About = ({about,setAbout}) => {
   return (
@@ -7,12 +11,32 @@ const About = ({about,setAbout}) => {
       <div className="windows-titlebar">
         <div className="windows-title">About</div>
         <div className="windows-buttons">
-          <div class="windows-button" style={{ backgroundColor: "#BABABA" }}>
-            _
-          </div>
-          <div class="windows-button" style={{ backgroundColor: "red" }} onClick={()=>{setAbout(false)}}>
+          <div
+            class="windows-button"
+            style={{ backgroundColor: "#BABABA" }}
+          ></div>
+          <div
+            class="windows-button"
+            style={{ backgroundColor: "red" }}
+            onClick={() => {
+              setAbout(false);
+            }}
+          >
             X
           </div>
+        </div>
+      </div>
+      <div className="about-content">
+        <div className="about-content-para">
+          Hello! My Name is Jeevottam Bhat. I am in my 4th year of Engineering
+          in NMAM Institute of Technology, NITTE. My Interests are Web
+          Development, watching football, playing games like Valorant ,CSGO with
+          friends. Also love listening to Music with Rap,Hip Hop being my
+          favorite genres.
+          <Education educationData={educationData} />
+        </div>
+        <div className="about-content-img">
+          <img src={pfp} alt="" />
         </div>
       </div>
     </div>

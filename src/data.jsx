@@ -25,3 +25,17 @@ export const social = [
   },
 ];
 
+export const educationData = [
+  {
+    institute: "NMAM Institute Of Technology",
+    duration: "2020 - present",
+    degree: "Computer Science and Engineering",
+    cgpa: "8.8",
+  },
+  {
+    institute: "Sharada Pre University",
+    duration: "2018 - 2020",
+    degree: "PCMS",
+    cgpa: "90%",
+  },
+];

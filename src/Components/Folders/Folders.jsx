@@ -16,7 +16,7 @@ const Folders = () => {
           src={folderIcon}
           alt=""
           id="about"
-          onClick={() => {
+          onDoubleClick={() => {
             setAbout(!about);
           }}
         />

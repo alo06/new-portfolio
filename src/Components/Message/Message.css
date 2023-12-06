@@ -7,10 +7,11 @@
     left: 35%;
     border: 3px solid #000000;
     z-index: 1;
+    border-radius: 5px;
 }
 .message-container-top{
     height: 35px;
-    background-color: #0000C5;
+    background: linear-gradient(to bottom, #0077CC, #005599);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,12 +26,13 @@
     width: 30px;
     height: 25px;
     margin-right: 5px;
-    background-color: #BABABA;
-    background-color: #c0c0c0;
+    background-color: #d3414d;
   border: 2px solid #808080; 
   font-size: 12px;
   cursor: pointer;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 15px;
 }
 
 .message-btn:active{
