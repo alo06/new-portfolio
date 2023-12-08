@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Message.css'
-import mouseClick from "../../assets/images/MouseClick.mp3";
+import mouseClick from "../../assets/images/Audio/MouseClick.mp3";
 import computer from '../../assets/images/computer.png'
 
 

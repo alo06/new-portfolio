@@ -2,9 +2,8 @@ import { useEffect, useState } from 'react'
 import Message from './Components/Message/Message'
 import Taskbar from './Components/Taskbar/Taskbar'
 import Folders from './Components/Folders/Folders';
-import ReactAudioPlayer from "react-audio-player";
 import startupImage from './assets/images/startupImage.png'
-import windowsMp3 from './assets/images/windows.mp3'
+import windowsMp3 from "./assets/images/Audio/windows.mp3";
 
 
 function App() {

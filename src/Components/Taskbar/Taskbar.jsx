@@ -4,7 +4,7 @@ import { social } from '../../data.jsx'
 import { SiWindows95 } from "react-icons/si";
 import { GiSpeakerOff, GiSpeaker } from "react-icons/gi";
 import ReactAudioPlayer from "react-audio-player";
-import badpig from '../../assets/images/badpig.mp3'
+import badpig from '../../assets/images/Audio/badpig.mp3'
 
 const Taskbar = () => {
   const [time,setTime] = useState(new Date());

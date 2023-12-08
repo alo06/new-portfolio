@@ -6,7 +6,6 @@ const Education = ({ educationData }) => {
     <div className="timeline-container">
       {educationData.map((education) => (
         <div key={education.institute} className="timeline-item">
-          {console.log(education.institute)}
           <div className="timeline-content">
             <h3>{education.institute}</h3>
             <p>{education.duration}</p>

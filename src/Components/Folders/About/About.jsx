@@ -3,29 +3,12 @@ import './About.css'
 import pfp from '../../../assets/images/pfp.jpg'
 import Education from './Education'
 import { educationData } from '../../../data.jsx'
-
+import TitleBar from '../TitleBar/TitleBar.jsx'
 
 const About = ({about,setAbout}) => {
   return (
     <div className={about ? "about" : "close"}>
-      <div className="windows-titlebar">
-        <div className="windows-title">About</div>
-        <div className="windows-buttons">
-          <div
-            class="windows-button"
-            style={{ backgroundColor: "#BABABA" }}
-          ></div>
-          <div
-            class="windows-button"
-            style={{ backgroundColor: "red" }}
-            onClick={() => {
-              setAbout(false);
-            }}
-          >
-            X
-          </div>
-        </div>
-      </div>
+      <TitleBar title='About' onToggle={()=>setAbout(!about)}/>
       <div className="about-content">
         <div className="about-content-para">
           Hello! My Name is Jeevottam Bhat. I am in my 4th year of Engineering

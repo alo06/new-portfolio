@@ -1,0 +1,11 @@
+.skills{
+     position: absolute;
+    height: 94vh;
+    width: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
