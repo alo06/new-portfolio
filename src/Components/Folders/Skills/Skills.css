@@ -1,6 +1,6 @@
 .skills{
-     position: absolute;
-    height: 94vh;
+    position: absolute;
+    height: 94%;
     width: 100%;
     margin: auto;
     left: 0;
@@ -8,4 +8,37 @@
     top: 0;
     background-color: white;
     z-index: 1000;
+}
+
+.skills-category {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(to right, #3498db, #1abc9c); 
+  border-radius: 15px; 
+  padding: 20px; 
+  margin: 10px;
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .skill {
+    margin-bottom: 20px;
+    text-align: center;
+
+    img {
+      width: 80px; 
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 0;
+      color: #fff; 
+    }
+  }
 }

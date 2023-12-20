@@ -1,6 +1,6 @@
 .taskbar{
     background: linear-gradient(to bottom, #0077CC, #005599);
-    height: 40px;
+    height: 6%;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -4,7 +4,7 @@ import Taskbar from './Components/Taskbar/Taskbar'
 import Folders from './Components/Folders/Folders';
 import startupImage from './assets/images/startupImage.png'
 import windowsMp3 from "./assets/images/Audio/windows.mp3";
-
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [isLoading,setIsLoading] = useState(true);
@@ -28,6 +28,7 @@ function App() {
       <Folders />
       <Taskbar />
       <audio src={windowsMp3} autoPlay />
+      <Analytics />
     </div>
   );
 }

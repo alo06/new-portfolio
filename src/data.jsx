@@ -1,6 +1,23 @@
 import { FaGithub, FaLinkedin, FaBluetooth } from "react-icons/fa";
-import { SiLeetcode, SiGeeksforgeeks,  } from "react-icons/si";
+import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
 
+import collegeMap from "./assets/images/ProjectImages/collegemap.jpg";
+import EzFit from "./assets/images/ProjectImages/EZ.jpg";
+import imageEditor from "./assets/images/ProjectImages/imageEditor.jpg";
+import jobify from "./assets/images/ProjectImages/jobfy.jpg";
+import portfolio from "./assets/images/ProjectImages/portfolio.png";
+
+import cpp from "./assets/images/Skills/Languages/cpp.png";
+import c from "./assets/images/Skills/Languages/c.png";
+import java from "./assets/images/Skills/Languages/java.png";
+import js from "./assets/images/Skills/Languages/js.png";
+
+import android from "./assets/images/Skills/TechStack/android.png";
+import css from "./assets/images/Skills/TechStack/css.png";
+import react from "./assets/images/Skills/TechStack/react.png";
+import php from "./assets/images/Skills/TechStack/php.png";
+import html from "./assets/images/Skills/TechStack/html.png";
+import mysql from "./assets/images/Skills/TechStack/mysql.png";
 
 export const social = [
   {
@@ -40,7 +57,7 @@ export const educationData = [
   },
 ];
 
-/*export const projectData = [
+export const projectData = [
   {
     id: 1,
     name: "College Map",
@@ -86,9 +103,65 @@ export const educationData = [
     name: "Portfolio",
     image: portfolio,
     details:
-      "Welcome to my portfolio website, built using ReactJS and CSS. Here, I showcase a collection of my projects and skills. Explore my journey and expertise in the world of web development.",
+      "Welcome to my Windows XP-inspired portfolio website, crafted with ReactJS and CSS. Take a nostalgic journey through a showcase of my projects and skills, reminiscent of the classic Windows XP era. Explore my web development expertise as I invite you to navigate through this digital space.",
     tech: "ReactJS,CSS",
     link: "https://github.com/alo06/portfolio",
     live: "https://jeevottambhat.vercel.app/",
   },
-];*/
+];
+
+export const languages = [
+  {
+    id: 1,
+    image: cpp,
+    name: "cplusplus",
+  },
+  {
+    id: 2,
+    image: c,
+    name: "c",
+  },
+  {
+    id: 3,
+    image: java,
+    name: "java",
+  },
+  {
+    id: 4,
+    image: js,
+    name: "js",
+  },
+];
+
+export const techStack = [
+  {
+    id: 5,
+    image: html,
+    name: "html",
+  },
+  {
+    id: 6,
+    image: css,
+    name: "css",
+  },
+  {
+    id: 7,
+    image: react,
+    name: "react",
+  },
+  {
+    id: 8,
+    image: php,
+    name: "php",
+  },
+  {
+    id: 9,
+    image: mysql,
+    name: "mysql",
+  },
+  {
+    id: 10,
+    image: android,
+    name: "android",
+  },
+];
