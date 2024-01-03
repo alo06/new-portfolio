@@ -7,17 +7,14 @@ import questionMark from '../../assets/images/FolderImages/questionMark.png'
 import Skills from './Skills/Skills';
 import Contact from './Contact/Contact';
 import mail from "../../assets/images/FolderImages/mail.png";
+import { useGlobalContext } from '../../Context';
 
 const Folders = () => {
-  const [about,setAbout] = useState(false);
-  const [project,setProject] = useState(false);
-  const [skills,setSkills] = useState(false);
-  const [contact,setContact] = useState(false);
-
+  const {about,setAbout,project,setProject,skills,setSkills,contact,setContact} = useGlobalContext()
   return (
     <div className="folder">
       <div className="folder-container">
-        <About about={about} setAbout={setAbout} />
+        <About/>
         <img
           src={questionMark}
           alt=""
@@ -29,8 +26,7 @@ const Folders = () => {
         <p>About</p>
       </div>
       <div className="folder-container">
-        <Project project={project} setProject={setProject} />
-        {console.log(project)}
+        <Project />
         <img
           src={folderIcon}
           alt=""
@@ -41,12 +37,12 @@ const Folders = () => {
         <p>Project</p>
       </div>
       <div className="folder-container">
-        <Skills skills={skills} setSkills={setSkills} />
+        <Skills/>
         <img src={folderIcon} alt="" onDoubleClick={() => setSkills(!skills)} />
         <p>Skills</p>
       </div>
       <div className="folder-container">
-        <Contact contact={contact} setContact={setContact} />
+        <Contact/>
         <img
           src={mail}
           alt=""

@@ -3,9 +3,11 @@ import './Project.css'
 import TitleBar from '../TitleBar/TitleBar'
 import { projectData } from '../../../data.jsx'
 import SingleProject from './SingleProject'
+import { useGlobalContext } from '../../../Context.jsx'
 
 
-const Project = ({project,setProject}) => {
+const Project = () => {
+  const {project,setProject} = useGlobalContext()
   return (
     <div className={project ? "project" : "close"}>
       <TitleBar title="Project" onToggle={() => setProject(!project)} />

@@ -4,8 +4,10 @@ import pfp from '../../../assets/images/pfp.jpg'
 import Education from './Education'
 import { educationData } from '../../../data.jsx'
 import TitleBar from '../TitleBar/TitleBar.jsx'
+import { useGlobalContext } from '../../../Context.jsx'
 
-const About = ({about,setAbout}) => {
+const About = () => {
+  const {about,setAbout} = useGlobalContext()
   return (
     <div className={about ? "about" : "close"}>
       <TitleBar title='About' onToggle={()=>setAbout(!about)}/>

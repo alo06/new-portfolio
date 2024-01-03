@@ -4,8 +4,10 @@ import "./Skills.css";
 import SingleSkills from "./SingleSkills";
 import { languages } from "../../../data";
 import { techStack } from "../../../data";
+import { useGlobalContext } from "../../../Context";
 
-const Skills = ({ skills, setSkills }) => {
+const Skills = () => {
+  const {skills,setSkills} = useGlobalContext()
   return (
     <div className={skills ? "skills" : "close"}>
       <TitleBar

@@ -2,9 +2,12 @@ import React, { useRef } from "react";
 import TitleBar from "../TitleBar/TitleBar";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
+import { useGlobalContext } from "../../../Context";
 
 
-const Contact = ({ contact, setContact }) => {
+const Contact = () => {
+
+  const {contact,setContact} = useGlobalContext()
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -27,6 +30,7 @@ const Contact = ({ contact, setContact }) => {
         }
       );
   };
+
   return (
     <div className={contact ? "contact" : "close"}>
       <TitleBar
