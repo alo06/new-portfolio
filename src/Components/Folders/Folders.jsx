@@ -7,6 +7,7 @@ import questionMark from '../../assets/images/FolderImages/questionMark.png'
 import Skills from './Skills/Skills';
 import Contact from './Contact/Contact';
 import mail from "../../assets/images/FolderImages/mail.png";
+import tetris from "../../assets/images/FolderImages/tetris-logo.png"
 import { useGlobalContext } from '../../Context';
 
 const Folders = () => {
@@ -14,7 +15,7 @@ const Folders = () => {
   return (
     <div className="folder">
       <div className="folder-container">
-        <About/>
+        <About />
         <img
           src={questionMark}
           alt=""
@@ -37,12 +38,12 @@ const Folders = () => {
         <p>Project</p>
       </div>
       <div className="folder-container">
-        <Skills/>
+        <Skills />
         <img src={folderIcon} alt="" onDoubleClick={() => setSkills(!skills)} />
         <p>Skills</p>
       </div>
       <div className="folder-container">
-        <Contact/>
+        <Contact />
         <img
           src={mail}
           alt=""
@@ -51,6 +52,14 @@ const Folders = () => {
           }}
         />
         <p>Contact</p>
+      </div>
+      <div className="folder-container">
+         <img
+          src={tetris}
+          alt=""
+          onDoubleClick={()=>{window.location.href = "https://tetris-alo06.vercel.app/";}}
+        /> 
+        <p>Tetris</p>
       </div>
     </div>
   );
