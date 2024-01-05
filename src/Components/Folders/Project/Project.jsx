@@ -4,6 +4,7 @@ import TitleBar from '../TitleBar/TitleBar'
 import { projectData } from '../../../data.jsx'
 import SingleProject from './SingleProject'
 import { useGlobalContext } from '../../../Context.jsx'
+import Navigation from '../Navigation/Navigation.jsx'
 
 
 const Project = () => {
@@ -11,10 +12,14 @@ const Project = () => {
   return (
     <div className={project ? "project" : "close"}>
       <TitleBar title="Project" onToggle={() => setProject(!project)} />
-      <div className="project-card-container">
-        {projectData.map((project) => {
-          return <SingleProject key={project.id} project={project} />;
-        })}
+      <div className="split">
+        <Navigation/>
+        <div className="project-card-container">
+  
+          {projectData.map((project) => {
+            return <SingleProject key={project.id} project={project} />;
+          })}
+        </div>
       </div>
     </div>
   );

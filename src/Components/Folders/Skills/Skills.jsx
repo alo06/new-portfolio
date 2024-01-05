@@ -5,6 +5,7 @@ import SingleSkills from "./SingleSkills";
 import { languages } from "../../../data";
 import { techStack } from "../../../data";
 import { useGlobalContext } from "../../../Context";
+import Navigation from "../Navigation/Navigation";
 
 const Skills = () => {
   const {skills,setSkills} = useGlobalContext()
@@ -16,8 +17,13 @@ const Skills = () => {
           setSkills(false);
         }}
       />
-      <SingleSkills category="Languages" skills={languages}/>
-      <SingleSkills category="Tech Stack" skills={techStack}/>
+      <div className="split">
+        <Navigation/>
+        <div className="skills-container">
+          <SingleSkills category="Languages" skills={languages} />
+          <SingleSkills category="Tech Stack" skills={techStack} />
+        </div>
+      </div>
     </div>
   );
 };

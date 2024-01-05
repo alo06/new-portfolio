@@ -16,6 +16,7 @@
   align-items: center;
   height: 94%;
   flex-direction: column;
+  width: 100%;
 }
 
 .form {

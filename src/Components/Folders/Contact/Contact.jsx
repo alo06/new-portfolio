@@ -3,6 +3,7 @@ import TitleBar from "../TitleBar/TitleBar";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import { useGlobalContext } from "../../../Context";
+import Navigation from "../Navigation/Navigation";
 
 
 const Contact = () => {
@@ -39,25 +40,28 @@ const Contact = () => {
           setContact(false);
         }}
       />
-      <div className="windows-xp-form-container">
-        <form ref={form} onSubmit={sendEmail} className="form" id="contact">
-          <div className="contact-inputs">
-            <label htmlFor="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div className="contact-inputs">
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div className="contact-inputs">
-            <label htmlFor="message">Message:</label>
-            <textarea id="message" name="message" required />
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-        <h3 style={{ color: "red",margin:'10px 0 0 0'}}>
-          Please Note: Provide a valid email in-order to get a response
-        </h3>
+      <div className="split">
+        <Navigation/>
+        <div className="windows-xp-form-container">
+          <form ref={form} onSubmit={sendEmail} className="form" id="contact">
+            <div className="contact-inputs">
+              <label htmlFor="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div className="contact-inputs">
+              <label htmlFor="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div className="contact-inputs">
+              <label htmlFor="message">Message:</label>
+              <textarea id="message" name="message" required />
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+          <h3 style={{ color: "red", margin: "10px 0 0 0" }}>
+            Please Note: Provide a valid email in-order to get a response
+          </h3>
+        </div>
       </div>
     </div>
   );

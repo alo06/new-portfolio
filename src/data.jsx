@@ -19,6 +19,10 @@ import php from "./assets/images/Skills/TechStack/php.png";
 import html from "./assets/images/Skills/TechStack/html.png";
 import mysql from "./assets/images/Skills/TechStack/mysql.png";
 
+import folder from "./assets/images/FolderImages/folder.png"
+import mail from "./assets/images/FolderImages/mail.png"
+import about from "./assets/images/FolderImages/questionMark.png"
+
 export const social = [
   {
     id: 1,
@@ -165,3 +169,23 @@ export const techStack = [
     name: "android",
   },
 ];
+
+export const navigation = [
+  {
+    name: "About",
+    img: about,
+  },
+  {
+    name: "Contact",
+    img: mail,
+  },
+  {
+    name: "Skills",
+    img: folder,
+  },
+  {
+    name: "Project",
+    img: folder,
+  },
+];
+

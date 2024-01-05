@@ -5,6 +5,7 @@ const SingleProject = ({project}) => {
  
   return (
     <div className="project-card">
+      <div className="project-top-bar"></div>
       <div className="project-image">
         <img src={image} alt={name} />
       </div>
@@ -15,12 +16,8 @@ const SingleProject = ({project}) => {
           <strong>Tech Stack:</strong> {tech}
         </p>
         <div className="project-links">
-          <a href={link}>
-            GitHub Link
-          </a>
-          <a href={live}>
-            Live Page
-          </a>
+          <a href={link}>GitHub Link</a>
+          <a href={live}>Live Page</a>
         </div>
       </div>
     </div>
